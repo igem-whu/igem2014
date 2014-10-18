@@ -1,0 +1,126 @@
+/* pre init */
+#globalWrapper, #content, #bodyContent { margin: 0; padding: 0; width: 100%; border: 0; line-height: inherit; height: 100%;}
+#content>a, #content>h1, #contentSub, #bodyContent>p, #bodyContent>h3, #bodyContent>div, #footer-box { display: none; }
+
+#top-section { position: absolute; border: 0; height: 12px; font-size: 14px; z-index: 2000; }
+#p-logo, #search-controls { display: none; }
+#top-section .left-menu ul { display: none; }
+#top-section:hover .left-menu ul { display: block; }
+#top-section ul { margin: 0.3em 0px 0px 1.5em; }
+
+#globalWrapper { font-size: inherit; }
+
+/* init */
+html { height: 100%; }
+* { padding: 0; margin: 0; }
+body { height: 100%; background: transparent; font-size: 16px; font-family: serif; line-height: 1.15em; }
+a, a:hover, a:active, a:link { color: inherit; text-decoration: none; }
+/* a[name] { position: absolute; top: -3em; } */
+
+ul, li { padding: 0; margin: 0; line-height: inherit; }
+ul { list-style: none; }
+
+.hidden { display: none; visibility: visible; }
+.no-exist { display: none; }
+
+/* dirty default removed */
+nav a { color: inherit !important; }
+ul, li { line-height: inherit !important; }
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 14em;
+    z-index: 1000;
+    background: transparent;
+    color: #f3f3f3;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+}
+nav>ul>li a {
+    display: block;
+    height: 1em;
+    padding: 0.5em;
+}
+
+nav>ul>ul {
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+}
+nav>ul>ul>li a {
+    display: block;
+    padding: 0.2em 0.5em;
+}
+
+nav li:hover {
+    color: #fff;
+}
+nav li.current {
+    color: #fff;
+}
+
+/* main */
+main>section {
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+}
+main>section>div {
+    padding-left: 14em;
+    margin: auto;
+    width: 720px;
+}
+#home {
+    background-image: url(main-backgrounds/b1.png);
+}
+#project {
+    background-image: url(main-backgrounds/b2.png);
+}
+#results {
+    background-image: url(main-backgrounds/b3.png);
+}
+#modeling {
+    background-image: url(main-backgrounds/b4.png);
+}
+#achieve {
+    background-image: url(main-backgrounds/b5.png);
+}
+#practice {
+    background-image: url(main-backgrounds/b6.png);
+}
+#team {
+    background-image: url(main-backgrounds/b3.png);
+}
+#safety {
+    background-image: url(main-backgrounds/b4.png);
+}
+#notebook {
+    background-image: url(main-backgrounds/b5.png);
+}
+
+ref { font-size: 0.6em; }
+
+.line-wrapper { position: relative; }
+.line-wrapper div { float: left; padding: 1em 20px; }
+.clearfix { clear: both; }
+
+.image { padding: 1em 0; text-align: center; }
+
+main section h1, main section h2, main section h3, main section h4 {
+    margin: 2em 0 1em 0;
+}
+main p {
+    margin: 1em 0;
+}
+main .overview {
+    height: 100%;
+    margin: 5em;
+}
