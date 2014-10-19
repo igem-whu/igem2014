@@ -15,15 +15,16 @@
     <li class='project'><a href="">Project</a></li>
     <ul class='hidden'>
       <li><a href="#background">Background</a></li>
-      <li><a href="#sys1">the Coloration System</a></li>
-      <li><a href="#sys2">the Street Cleaner System</a></li>
-      <li><a href="#sys3">the Lysis System</a></li>
+      <li><a href="#project1">the Coloration System</a></li>
+      <li><a href="#project2">the Street Cleaner System</a></li>
+      <li><a href="#project3">the Lysis System</a></li>
+      <li><a href="#application">Application</a></li>
     </ul>
     <li class='results'><a href="">Results</a></li>
     <ul class='hidden'>
-      <li><a href="#sys1">the Coloration System</a></li>
-      <li><a href="#sys2">the Street Cleaner System</a></li>
-      <li><a href="#sys3">the Lysis System</a></li>
+      <li><a href="#result1">the Coloration System</a></li>
+      <li><a href="#result2">the Street Cleaner System</a></li>
+      <li><a href="#result3">the Lysis System</a></li>
       <li><a href="#future">Future Work</a></li>
     </ul>
     <li class='modeling'><a href="">Modeling</a></li>
@@ -34,7 +35,7 @@
       <li><a href="#parts">Parts Registered</a></li>
     </ul>
     <li class='practice current'><a href="">Human Practice</a></li>
-    <ul class='current'>
+    <ul class=''>
       <li><a href="#research">Research: Formaldehyde in cars</a></li>
       <li><a href="#helping">Helping Other Teams</a></li>
       <li><a href="#popularization">Popularization</a></li>
@@ -61,13 +62,15 @@
 
 <main>
 
-<section id="home" class='current'>
-
+<section id="home" class='hidden'>
+<div>
+</div>
 </section>
 
 <section id="project" class='hidden'>
 <div>
 
+<div class="overview">
 <p>Formaldehyde is known to be a human carcinogen which do a lot of
 harm to human beings, especially whose house is newly decorated. And
 to make matters worse, there are no effective and
@@ -78,7 +81,10 @@ indoor formaldehyde.</p>
 <p>Using synthetic biology, we developed a method of detection and
 removal of indoor formaldehyde, which can solve this problem without
 secondary-pollution.</p>
+</div>
 
+<div class="background">
+<a name="background"></a>
 <h2>Background: About Formaldehyde</h2>
 
 <h3>Properties</h3>
@@ -177,6 +183,10 @@ most likely involve several modes of action.<ref>[1]</ref></p>
 formaldehyde, we design and construct three systems to build our
 Formaldehyde Terminator.</p>
 
+</div>
+
+<div class="project1">
+<a name="project1"></a>
 <h2>Coloration system</h2>
 
 <p> Since we would like to use formaldehyde as an input in our
@@ -207,7 +217,11 @@ not from the color change.</p>
 <p>Figure 2 A GFP reporter is added downstream of the formaldehyde promoter</p>
 </div>
 
-<h3>The street cleaner system</h3>
+</div>
+
+<div class="project2">
+<a name="project2"></a>
+<h2>The street cleaner system</h2>
 
 <p>PADH, formaldehyde dehydrogenase from Pseudomonas putida is a
 formaldehyde dehydrogenase which can oxidize free formaldehyde to
@@ -229,7 +243,11 @@ constitutive promoter to guarantee the expression level.</p>
 <p>Figure 4 Two enzymes are added downstream of the formaldehyde promoter</p>
 </div>
 
-<h3>lysis system</h3>
+</div>
+
+<div class="project3">
+<a name="project3"></a>
+<h2>Lysis system</h2>
 
 <p>Lysis system has two important roles in our design.  One is about
 biosafety; the other is to help the enzymes come out of the bacteria
@@ -268,39 +286,10 @@ FDH, PADH and LuxI protein. LuxI synthesis AHL and AHL binds to LuxR
 so that the P-lux is activated and the E7 protein is expressed. When
 E7 reaches a certain level, the bacteria lyse.</p>
 
-<h3>reference</h3>
+</div>
 
-<ul>
-<li>
-[1] Yurimoto H, Hirai R, Matsuno N, et al. HxlR, a member of the DUF24 protein family, is a DNA&copy; binding protein that acts as a positive regulator of the formaldehyde&copy;inducible hxlAB operon in Bacillus subtilis[J]. Molecular microbiology, 2005, 57(2): 511-519.
-</li>
-<li>
-[2] Huyen N T T, Eiamphungporn W, M&auml;der U, et al. Genome&copy; wide responses to carbonyl electrophiles in Bacillus subtilis: control of the thiol&copy; dependent formaldehyde dehydrogenase AdhA and cysteine proteinase YraA by the MerR&copy; family regulator YraB (AdhR)[J]. Molecular microbiology, 2009, 71(4): 876-894.
-</li>
-<li>
-[3] Yasueda H, Kawahara Y, Sugimoto S. Bacillus subtilis yckG andyckF Encode Two Key Enzymes of the Ribulose Monophosphate Pathway Used by Methylotrophs, and yckH Is Required for Their Expression[J]. Journal of bacteriology, 1999, 181(23): 7154-7160.
-</li>
-<li>
-[4] Ito K, Takahashi M, Yoshimoto T, et al. Cloning and high-level expression of the glutathione-independent formaldehyde dehydrogenase gene from Pseudomonas putida[J]. Journal of bacteriology, 1994, 176(9): 2483-2491.
-</li>
-<li>
-[5] Sheng B, Zheng Z, Lv M, et al. Efficient Production of (R)-2-Hydroxy-4-Phenylbutyric Acid by Using a Coupled Reconstructed d-Lactate Dehydrogenase and Formate Dehydrogenase System[J]. PloS one, 2014, 9(8): e104204.
-</li>
-<li>
-[6] Khangulov S V, Gladyshev V N, Dismukes G C, et al. Selenium-containing formate dehydrogenase H from Escherichia coli: a molybdopterin enzyme that catalyzes formate oxidation without oxygen transfer[J]. Biochemistry, 1998, 37(10): 3518-3528.
-</li>
-<li>
-[7] Winson M K, Camara M, Latifi A, et al. Multiple N-acyl-L-homoserine lactone signal molecules regulate production of virulence determinants and secondary metabolites in Pseudomonas aeruginosa[J]. Proceedings of the National Academy of Sciences, 1995, 92(20): 9427-9431.	
-</li>
-<li>
-[8]Lin L J R, Liao C C, Chen Y R, et al. Induction of membrane permeability in Escherichia coli mediated by lysis protein of the ColE7 operon[J]. FEMS microbiology letters, 2009, 298(1): 85-92.
-</li>
-<li>
-[9] Chak K F, Kuo W S, James R. Cloning and characterization of the ColE7 plasmid[J]. Journal of general microbiology, 1991, 137(1): 91-100.
-</li>
-</ul>
-
-
+<div class="application">
+<a name="application"></a>
 <h2>Application:</h2>
 
 <p>To make our detection and street cleaner systems more convenient
@@ -364,6 +353,42 @@ effluence for long time, and it can also limit the influence of
 deposition in water. This device can be used in high poisonous
 effluence.</p>
 
+</div>
+
+<div class="reference">
+<h2>reference</h2>
+
+<ul>
+<li>
+[1] Yurimoto H, Hirai R, Matsuno N, et al. HxlR, a member of the DUF24 protein family, is a DNA&copy; binding protein that acts as a positive regulator of the formaldehyde&copy;inducible hxlAB operon in Bacillus subtilis[J]. Molecular microbiology, 2005, 57(2): 511-519.
+</li>
+<li>
+[2] Huyen N T T, Eiamphungporn W, M&auml;der U, et al. Genome&copy; wide responses to carbonyl electrophiles in Bacillus subtilis: control of the thiol&copy; dependent formaldehyde dehydrogenase AdhA and cysteine proteinase YraA by the MerR&copy; family regulator YraB (AdhR)[J]. Molecular microbiology, 2009, 71(4): 876-894.
+</li>
+<li>
+[3] Yasueda H, Kawahara Y, Sugimoto S. Bacillus subtilis yckG andyckF Encode Two Key Enzymes of the Ribulose Monophosphate Pathway Used by Methylotrophs, and yckH Is Required for Their Expression[J]. Journal of bacteriology, 1999, 181(23): 7154-7160.
+</li>
+<li>
+[4] Ito K, Takahashi M, Yoshimoto T, et al. Cloning and high-level expression of the glutathione-independent formaldehyde dehydrogenase gene from Pseudomonas putida[J]. Journal of bacteriology, 1994, 176(9): 2483-2491.
+</li>
+<li>
+[5] Sheng B, Zheng Z, Lv M, et al. Efficient Production of (R)-2-Hydroxy-4-Phenylbutyric Acid by Using a Coupled Reconstructed d-Lactate Dehydrogenase and Formate Dehydrogenase System[J]. PloS one, 2014, 9(8): e104204.
+</li>
+<li>
+[6] Khangulov S V, Gladyshev V N, Dismukes G C, et al. Selenium-containing formate dehydrogenase H from Escherichia coli: a molybdopterin enzyme that catalyzes formate oxidation without oxygen transfer[J]. Biochemistry, 1998, 37(10): 3518-3528.
+</li>
+<li>
+[7] Winson M K, Camara M, Latifi A, et al. Multiple N-acyl-L-homoserine lactone signal molecules regulate production of virulence determinants and secondary metabolites in Pseudomonas aeruginosa[J]. Proceedings of the National Academy of Sciences, 1995, 92(20): 9427-9431.	
+</li>
+<li>
+[8]Lin L J R, Liao C C, Chen Y R, et al. Induction of membrane permeability in Escherichia coli mediated by lysis protein of the ColE7 operon[J]. FEMS microbiology letters, 2009, 298(1): 85-92.
+</li>
+<li>
+[9] Chak K F, Kuo W S, James R. Cloning and characterization of the ColE7 plasmid[J]. Journal of general microbiology, 1991, 137(1): 91-100.
+</li>
+</ul>
+
+</div>
 
 </div>
 </section>
@@ -371,10 +396,8 @@ effluence.</p>
 <section id="results" class='hidden'>
 <div>
 
-<h3>Results</h3>
-
-<h1>Results</h1>
-
+<div class="result1">
+<a name="result1"></a>
 <h2>1 Coloration system</h2>
 
 <p>We have successfully amplified the P-formaldehyde gene (595bp) from
@@ -420,6 +443,10 @@ fluorescence/absorbance is not caused by the amount of bacteria.</p>
 <p>Figure 5 The growth condition of E.coli strain DH5a after formaldehyde stimulation.</p>
 </div>
 
+</div>
+
+<div class="result2">
+<a name="result2"></a>
 <h2>2 Street Cleaner System</h2>
 
 <p>We construct biobricks: Part: BBa_K1334016, BBa_K1334015 and
@@ -444,6 +471,10 @@ Figure 8 SDS-PAGE for the FDH generator.
 <div class="image"><img src="images/R-009-SDS-PAGE-for-PADH-generator.png" /></div>
 Figure 9 SDS-PAGE for the PADH generator.
 
+</div>
+
+<div class="result3">
+<a name="result3"></a>
 <h2>3 lysis system</h2>
 
 <p>(1)	Lux system</p>
@@ -521,8 +552,10 @@ bacteria.</p>
 <div class="image"><img src="images/R-015-Western-blot-using-anti-DnaK.png" /></div>
 Figure 15  Western-blot using anti-DnaK. The minus symbol means without IPTG induction. In the stimulation groups, the DnaK level increase in the supernatant shows that the E7 lyse the cell continuously.
 
+</div>
 
-<h4>Reference</h4>
+<div class="reference">
+<h2>Reference</h2>
 
 <ul>
 <li>
@@ -555,6 +588,8 @@ Figure 15  Western-blot using anti-DnaK. The minus symbol means without IPTG ind
 </ul>
 
 </div>
+
+</div>
 </section>
 
 <section id="modeling" class='hidden'>
@@ -567,8 +602,7 @@ Figure 15  Western-blot using anti-DnaK. The minus symbol means without IPTG ind
 <section id="achieve" class='hidden'>
 <div>
 
-<h3>Achievements</h3>
-
+<a name="judging"></a>
 <h3>iGEM Medals for Environment Teams</h3>
 
 <h4>Requirements for a Bronze Medal:</h4>
@@ -685,13 +719,14 @@ Human Practices) activities. Link to page on your team's wiki:
 </div>
 </section>
 
-<section id="practice" class='hidden'>
+<section id="practice" class='current'>
 <div>
 
-<h3>Human Practice</h3>
-<h1>Research: Formaldehyde in cars</h1>
+<div class="research">
+<a name="research"></a>
+<h2>Research: Formaldehyde in cars</h2>
 
-<h2>Concentrating On the Safety, Leading Our Design</h2>
+<h3>Concentrating On the Safety, Leading Our Design</h3>
 
 <p>Before we started our project "formaldehyde terminator", we aimed
 at detecting the existence of formaldehyde in the houses, but as time
@@ -702,7 +737,7 @@ formaldehyde in cars quickly." So we improved our design by adding
 Street Cleaner System, so we could not only detect formaldehyde but
 also remove it continuously. </p>
 
-<h2>Introduction</h2>
+<h3>Introduction</h3>
 
 <p>As we know, formaldehyde exists not only in factories and some
 extreme environment but also in our daily life, but at the same time
@@ -727,7 +762,7 @@ from <a href="">here</a>.</p>
 </div>
 <div class="clearfix"></div>
 
-<h2>Analysis</h2>
+<h3>Analysis</h3>
 <p>After we have collected series of data, we did a lot of
 analysis. For the reason that our data are influenced by different
 factors, we set groups of two-variables analysis (other factors are
@@ -770,7 +805,7 @@ between countries and average formaldehyde level of cars.</p>
 <p>From this graph we can know clearly that cars from different countries have diversity in the level of formaldehyde, so we may think it over before deciding which one to buy.</p>
 </div>
 
-<h2>Conclusion</h2>
+<h3>Conclusion</h3>
 
 <p>From this program we have finished, we can find that the basic
 vehicle - cars may have higher concentration of formaldehyde than we
@@ -789,9 +824,13 @@ project of using E. coli to detect and remove formaldehyde at the same
 time, we will work harder and try all we can to make our dream come
 true!</p>
 
-<h1>Helping other teams</h1>
+</div>
 
-<h2>Giving iGEM14_NUDT_CHINA A Biobrick We Constructed</h2>
+<div class="helping">
+<a name="helping"></a>
+<h2>Helping other teams</h2>
+
+<h3>Giving iGEM14_NUDT_CHINA A Biobrick We Constructed</h3>
 
 <p>We give iGEM14_NUDT_CHINA a new biobrick we constructed this
 year. The part number
@@ -802,7 +841,7 @@ theri <a href="http://2014.igem.org/Team:NUDT_CHINA/Attributions">Experiment
 Support</a>.
 </p>
 
-<h2>Helping iGEM14_HUST-INNOVATORS Constructing Their Biobrick</h2>
+<h3>Helping iGEM14_HUST-INNOVATORS Constructing Their Biobrick</h3>
 
 <p>In September in 2014, after we finished our project probably and
 went to the last step, we helped iGEM14_HUST-INNOVATORS construct a
@@ -838,7 +877,7 @@ while the pSB1C3 is 2070 bp so that there is only one bar near the
 successfully.</p>
 </div>
 
-<h2>Participating in other teams' human practice</h2>
+<h3>Participating in other teams' human practice</h3>
 
 <p>In June, we got an e-mail from the team Virginia, from this e-mail
 we knew that they were preparing for a global survey about synthetic
@@ -892,7 +931,7 @@ were very happy to see their Newsletter every week.</p>
 </div>
 
 
-<h2>Helping other teams after CCiC:</h2>
+<h3>Helping other teams after CCiC:</h3>
 
 <p>Besides the information mentioned above, after the CCiC(Central
 China iGEMer's Consortium), we amplified our communication with other
@@ -924,7 +963,13 @@ to BIT, which team had also received AHL from us.</p>
 
 <p style="background: red">Address from their teams</p>
 
-<h1>Popularization </h1>
+</div>
+
+</div>
+
+<div class="popularization">
+<a name="popularization"></a>
+<h2>Popularization </h2>
 
 <p>During our process in finishing the project, we had also tried to
 introduce iGEM to more people around. To achieve our goal, we had
@@ -968,7 +1013,11 @@ program to Creation Competition in our school, and we showed our idea
 to many teachers in different majors and finally got a great
 score.</p>
 
-<h1>Communication</h1>
+</div>
+
+<div class="communication">
+<a name="communication"></a>
+<h2>Communication</h2>
 
 <p>We have communicated with a lot of universities and
 organizations. First of all we will introduce you CCiC here. CCiC is
@@ -1005,12 +1054,15 @@ them and guided them a wonderful trip.</p>
 <div class="image"><img src="images/H-photo-16.jpg" /></div>
 
 </div>
+
+</div>
 </section>
 
 <section id="team" class='hidden'>
-
 <div>
-<h3>Team</h3>
+
+<div class="members">
+<a name="members"></a>
 <h2>Members</h2>
 
 <div class="image"><img src="images/T-photo-1.jpg" /></div>
@@ -1304,6 +1356,10 @@ good at primer design.</p>
  
 <p>Prof. Yu Chen</p>
 
+</div>
+
+<div class="attribution">
+<a name="attribution"></a>
 <h2>Attributions</h2>
 
 <ol>
@@ -1337,18 +1393,21 @@ Yunyun An, a very clever girl help us with our daily experiments as a technician
 </ol>
 
 </div>
+
+</div>
 </section>
 
 <section id="safety" class='hidden'>
 <div>
 
-<h3>Safety</h3>
-<h1>Safety</h1>
-
+<div class="overview">
 <p>Overview：Welcome to our Safety Page. We will first answer the
 safety questions asked by iGEM headquarters briefly, and then discuss
 safety issues associated with our project in detail..</p>
+</div>
 
+<div class="brief">
+<a name="brief">
 <h2>Brief answers to safety questions</h2>
 
 <p>1. Have your team members received any safety training yet?  Please
@@ -1423,6 +1482,10 @@ Safe lab practices, choices of which organisms to use.)</p>
 <li>No evidence, both theoretically and experimentally, shows that our work may improve the pathogenicity of the bacteria or may cause any damage to exterior environment, even taking into consideration the risks of horizontal gene transfer.</li>
 </ol>
 
+</div>
+
+<div class="issues">
+<a name="issues">
 <h2>Safety issues evaluation</h2>
 
 <p>As stated above, all the organisms and DNA hosts are not of high
@@ -1504,13 +1567,72 @@ us.</p>
 Student Experiments formulated by TCEB.</p>
 
 </div>
+
+</div>
 </section>
 
 <section id="notebook" class='hidden'>
 <div>
-<h3>Notebook</h3>
-<h1>Notebook</h1>
 
+<div class="timeline">
+<a name="timeline"></a>
+<h2>Timeline</h2>
+
+<pre>
+<p>2013 </p>
+<p>Nov. - Dec.,	Team building</p>
+<p></p>
+<p>2014</p>
+<p>Jan. - Feb.,	Knowledge preparing. Looked into iGEM and previous teams’ wiki.</p>
+<p></p>
+<p>Mar 			Brainstorming</p>
+<p>1st,			Put forward our idea to reduce formaldehyde</p>
+<p>8th,			the idea was made our project purpose. Decided to start with acid promoter</p>
+<p>15th,			acid promoter plan failed. Start to focus on formaldehyde promoter.</p>
+<p>19th,			first campus weekly thesis defense.</p>
+<p></p>
+<p>Apr.,		Idea building.</p>
+<p>10th,	 		last Campus Thesis Defense.</p>
+<p>20th,	internal adjustment. Established the group framework. Group members increased to 30.</p>
+<p>25th,	 		with primers, managed to generate qualified promoters</p>
+<p></p>
+<p>May,  		Instructor assessment and suggestions.</p>
+<p>3rd, 			lab cleaning. “Assembly Line” mode was introduced. Timing of preliminary stage.</p>
+<p>4th,		 	the result of the identification of the single colony which was positive.</p>
+<p></p>
+<p>Jun. ~ Oct., 	Experiment and Human Practice</p>
+<p>Jun. 30th, 	Group meeting. T-easy plasmid was introduced.</p>
+<p>Aug. 15th, 	Group meeting.</p>
+<p>Aug. 18th, 	Group members set off to HZAU for investigation and study.</p>
+<p>Aug. 20th,		Debug of Human Practice. Team networking.</p>
+<p>Aug. 26th, 	Attended CCiC held in Huazhong Agricultural University.</p>
+<p>Sept. 4th, 	    Decided group Logo. First sketch of our poster. </p>
+<p>Sept. 6th, 	    Got first result to prove formaldehyde promoter functional.</p>
+<p>Sept. 10th, 	Mathematical Modeling preparation.</p>
+<p>Sept. 20th,	    PowerPoint materials preparation.</p>
+<p>Sept. 28th, 	Biobrick shipping.</p>
+<p>Sept. 30th, 	Another biobrick shipping. </p>
+<p>Oct. 1st, 	    Assisted HUST-Innovators in constructing a biobrick</p>
+<p>Oct. 4th, 	    Prepare for mathematical modeling and establishment of website</p>
+<h3>Multi-Assembly-Line Journal:</h3>
+<h4>Promoter<h4>
+<p>Jun. ~ Sept., 	Pre-experiment for the construction and function test of hxlR operon.</p>
+<p>Aug. 20th, 	hxlR-GFP completed.</p>
+<p>Sept., 		Got a passable result with a small amount of leakage.  </p>   
+<h4>Lux Systerm</h4>
+<p>Sept. 26th, 	Construction complete. </p>
+<p>Oct. 1st, 		Function test showed a positive result</p>.
+<h4>FDH, PADH</h4>
+<p>Jul. ~ Aug., 	Enzyme DNA extracting and processing. </p>
+<h4>E7</h4>
+<p>Aug. 20th, 	Lysing function test. Western blot processing and OD600 observing.</p>
+
+</pre>
+
+</div>
+
+<div class="methods">
+<a name="methods"></a>
 <h2>Methods</h2>
 
 <h3>Function Test of E7 Lysis system</h3>
@@ -1605,58 +1727,8 @@ time until stabilized</p>
 <p>Measure the absorbance under 340nm wavelength of light, after 5min,
 10min, 15min, 20min respectively</p>
 
-<h2>Timeline</h2>
+</div>
 
-<pre>
-<p>2013 </p>
-<p>Nov. - Dec.,	Team building</p>
-<p></p>
-<p>2014</p>
-<p>Jan. - Feb.,	Knowledge preparing. Looked into iGEM and previous teams’ wiki.</p>
-<p></p>
-<p>Mar 			Brainstorming</p>
-<p>1st,			Put forward our idea to reduce formaldehyde</p>
-<p>8th,			the idea was made our project purpose. Decided to start with acid promoter</p>
-<p>15th,			acid promoter plan failed. Start to focus on formaldehyde promoter.</p>
-<p>19th,			first campus weekly thesis defense.</p>
-<p></p>
-<p>Apr.,		Idea building.</p>
-<p>10th,	 		last Campus Thesis Defense.</p>
-<p>20th,	internal adjustment. Established the group framework. Group members increased to 30.</p>
-<p>25th,	 		with primers, managed to generate qualified promoters</p>
-<p></p>
-<p>May,  		Instructor assessment and suggestions.</p>
-<p>3rd, 			lab cleaning. “Assembly Line” mode was introduced. Timing of preliminary stage.</p>
-<p>4th,		 	the result of the identification of the single colony which was positive.</p>
-<p></p>
-<p>Jun. ~ Oct., 	Experiment and Human Practice</p>
-<p>Jun. 30th, 	Group meeting. T-easy plasmid was introduced.</p>
-<p>Aug. 15th, 	Group meeting.</p>
-<p>Aug. 18th, 	Group members set off to HZAU for investigation and study.</p>
-<p>Aug. 20th,		Debug of Human Practice. Team networking.</p>
-<p>Aug. 26th, 	Attended CCiC held in Huazhong Agricultural University.</p>
-<p>Sept. 4th, 	    Decided group Logo. First sketch of our poster. </p>
-<p>Sept. 6th, 	    Got first result to prove formaldehyde promoter functional.</p>
-<p>Sept. 10th, 	Mathematical Modeling preparation.</p>
-<p>Sept. 20th,	    PowerPoint materials preparation.</p>
-<p>Sept. 28th, 	Biobrick shipping.</p>
-<p>Sept. 30th, 	Another biobrick shipping. </p>
-<p>Oct. 1st, 	    Assisted HUST-Innovators in constructing a biobrick</p>
-<p>Oct. 4th, 	    Prepare for mathematical modeling and establishment of website</p>
-<h3>Multi-Assembly-Line Journal:</h3>
-<h4>Promoter<h4>
-<p>Jun. ~ Sept., 	Pre-experiment for the construction and function test of hxlR operon.</p>
-<p>Aug. 20th, 	hxlR-GFP completed.</p>
-<p>Sept., 		Got a passable result with a small amount of leakage.  </p>   
-<h4>Lux Systerm</h4>
-<p>Sept. 26th, 	Construction complete. </p>
-<p>Oct. 1st, 		Function test showed a positive result</p>.
-<h4>FDH, PADH</h4>
-<p>Jul. ~ Aug., 	Enzyme DNA extracting and processing. </p>
-<h4>E7</h4>
-<p>Aug. 20th, 	Lysing function test. Western blot processing and OD600 observing.</p>
-
-</pre>
 </div>
 </section>
 

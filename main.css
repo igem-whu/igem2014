@@ -68,10 +68,13 @@ nav li.current {
 }
 
 /* main */
-main>section {
-    position: relative;
+main {
     height: 100%;
-    overflow: scroll;
+    position: relative;
+}
+main>section {
+    /* overflow: scroll; */
+    background-attachment: fixed;
 }
 main>section>div {
     padding-left: 14em;
@@ -80,6 +83,7 @@ main>section>div {
 }
 #home {
     background-image: url(main-backgrounds/b1.png);
+    height: 100%;
 }
 #project {
     background-image: url(main-backgrounds/b2.png);
@@ -115,12 +119,12 @@ ref { font-size: 0.6em; }
 .image { padding: 1em 0; text-align: center; }
 
 main section h1, main section h2, main section h3, main section h4 {
-    margin: 2em 0 1em 0;
+    margin: 0 0 3em 0;
 }
 main p {
     margin: 1em 0;
 }
 main .overview {
     height: 100%;
-    margin: 5em;
+    padding: 5em;
 }
