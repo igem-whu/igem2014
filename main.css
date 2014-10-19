@@ -76,15 +76,24 @@ nav li.current {
     height: 3em;
     width: 100%;
     z-index: 2000;
+    background-color: #4ca454;
 }
 #banner .logo {
     float: left;
+    width: 14em;
 }
 #banner .logo img {
+    float: right;
     height: 3em;
 }
 #banner .project-name {
     float: left;
+    height: 2em;
+    padding: 0.2em 2em;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 100%
 }
 
 /* main */
@@ -100,12 +109,13 @@ main>section {
     background-attachment: fixed;
 }
 main>section>div {
+    width: 720px;
     padding: 3em 0 0 14em;
     margin: auto;
-    width: 720px;
 }
 #home {
     background-image: url(main-images/b1.png);
+    height: 100%;
 }
 #project {
     background-image: url(main-images/b2.png);
