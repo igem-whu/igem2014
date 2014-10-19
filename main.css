@@ -73,7 +73,10 @@ main {
     position: relative;
 }
 main>section {
-    /* overflow: scroll; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-attachment: fixed;
 }
 main>section>div {
@@ -82,32 +85,31 @@ main>section>div {
     width: 720px;
 }
 #home {
-    background-image: url(main-backgrounds/b1.png);
-    height: 100%;
+    background-image: url(main-images/b1.png);
 }
 #project {
-    background-image: url(main-backgrounds/b2.png);
+    background-image: url(main-images/b2.png);
 }
 #results {
-    background-image: url(main-backgrounds/b3.png);
+    background-image: url(main-images/b3.png);
 }
 #modeling {
-    background-image: url(main-backgrounds/b4.png);
+    background-image: url(main-images/b4.png);
 }
 #achieve {
-    background-image: url(main-backgrounds/b5.png);
+    background-image: url(main-images/b5.png);
 }
 #practice {
-    background-image: url(main-backgrounds/b6.png);
+    background-image: url(main-images/b6.png);
 }
 #team {
-    background-image: url(main-backgrounds/b3.png);
+    background-image: url(main-images/b3.png);
 }
 #safety {
-    background-image: url(main-backgrounds/b4.png);
+    background-image: url(main-images/b4.png);
 }
 #notebook {
-    background-image: url(main-backgrounds/b5.png);
+    background-image: url(main-images/b5.png);
 }
 
 ref { font-size: 0.6em; }
@@ -127,4 +129,7 @@ main p {
 main .overview {
     height: 100%;
     padding: 5em;
+}
+
+#home .flow img {
 }

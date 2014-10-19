@@ -28,7 +28,11 @@
       <li><a href="#future">Future Work</a></li>
     </ul>
     <li class='modeling'><a href="">Modeling</a></li>
-    <ul class='hidden'></ul>
+    <ul class='hidden'>
+      <li><a href="#model-objective">Objective</a></li>
+      <li><a href="#model-description">Description</a></li>
+      <li><a href="#model-result">Result</a></li>
+    </ul>
     <li class='achieve'><a href="">Achievements</a></li>
     <ul class='hidden'>
       <li><a href="#judging">Judging Form</a></li>
@@ -64,6 +68,11 @@
 
 <section id="home" class='current'>
 <div>
+
+<h1>Formaldehyde Terminator</h1>
+<div class="logo"><img src="main-images/Whu-logo.jpg" /></div>
+<div class="figure"><img src="main-images/flow.jpg" /></div>
+
 </div>
 </section>
 
@@ -594,7 +603,191 @@ Figure 15  Western-blot using anti-DnaK. The minus symbol means without IPTG ind
 
 <section id="modeling" class='hidden'>
 <div>
-<h3>Modeling</h3>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p>If you want to look into details about the functions of our
+project, please enter the following models:</p>
+
+<h2>Formaldehyde promoter model</h2>
+
+<div class="model-objective">
+<a name="model-objective"></a>
+<h3>Objective</h3>
+
+<p>To predict the effect of the P- formaldehyde on recombinant plasmid
+in Escherichia coli, we develop a mathematical model that describes
+the strength of the P- formaldehyde, and in this model we simulate the
+procedure of which P- formaldehyde is activated and then expresses the
+downstream genes, whose expression intensity indicates the strength of
+P- formaldehyde.</p>
+
+</div>
+
+<div class="model-description">
+<a name="model-description"></a>
+<h3>Model Description</h3>
+
+<p>1.1The regulation mechanism of formaldehyde operon (HxlAB operon)
+HxlAB operon encodes two key enzymes in the ribulose monophosphate
+pathway that are involved in formaldehyde fixation,
+3-hexulose-6-phosphate synthase and
+6-phospho-3-hexuloisomerase. Expression of the hxlAB operon is induced
+by the presence of formaldehyde.</p>
+
+<img />Figure.1formaldehyde
+operon (HxlAB operon)
+
+<p>HxlR protein can enhance the operon to some extent. The hxlR gene
+that encodes HxlR protein is located upstream of the hxlAB
+operon. When the hxlR protein binds BRH1 operating site, the complex
+can promote the binding of another hxlR protein with BRH2 operating
+site. On the contrary, binding of hxlR to BRH2 operating site can not
+promote the binding of BRH1 site. In other words, the binding is in a
+specified order. Reactions below are involved in the regulation
+process of HxlAB operon.</p>
+
+\[ hxlR+BRH1\rightarrow hxlR\cdot BRH1(=STR1)\]
+\[ STR1+BRH2+hxlR\rightarrow 2hxlR\cdot BRH1\cdot BRH2(STR2) \]
+\[ STR1+STR2+TRP\rightarrow BRH1+BRH2 \]
+
+<p>Explanation of the symbols used above: hxlR is for the protein that
+has enhancing function, BRH1 and BRH2 are for two operating sites, TRP
+is for the inactive operating sites.</p>
+
+<h4>1.2 Transcription efficiency factor \(\eta\) </h4>
+
+<p>Based on the equation above we can deduce the following equations.</p>
+
+\[ \frac{[hxlR]\cdot [BRH1]}{[STR1]}=K_{1} \]
+\[ \frac{[STR1]\cdot [BRH2]\cdot [hxlR]}{[STR2]}=K_{2} \]
+\[ \frac{[TRP]\cdot [STR1]\cdot [STR2]}{[BRH1]\cdot [BRH2]}=K_{3} \]
+
+<p>And the equations of material balance</p>
+
+\[ [hxlR_{t}]=[hxlR]+[STR1]+[STR2]+[BRH2] \]
+\[ [O_{t}]=[BRH1]+[BRH2]+[TRP] \]
+
+<p>Explanation of symbols used above: \( [hxlR_{t}]\) is for the total
+concentration of the hxlR enhancing protein, \( [O_{t}]\) is for the
+total concentration of theoperating sites.</p>
+
+<p>Given that there is constitutive instability inside the cell, the
+aggregate level of operon \( [O_{t}]\) is identical to that of
+heterologous gene[G]</p>
+
+\[ [O_{t}]=[G]\]
+
+<p>The quantity of transcription efficiency factor is defined by the
+ratio of \( [O]\) and \( [O']\). According to the equation above, we
+learned that</p>
+
+\[ \eta =\frac{[O]}{[O']}=\frac{\sqrt{[B(A-G)+C]^{2}+4\cdot B\cdot C\cdot G}-[B(A-G)+C]}{2\cdot B\cdot C} \]
+
+<p>A, B, C, and G are defined as:</p>
+
+\[ A=[hxlR_{t}] \]
+\[ B=\frac{[hxlR]^{2}}{K_{1}\cdot K_{2}\cdot K_{3}}\]
+\[ C=1+\frac{[hxlR]}{K_{1}}+\frac{[hxlR]^{2}}{K_{1}\cdot K_{2}} \]
+\[ G=[G] \]
+
+<h4>1.3 mRNA concentration</h4>
+
+<p>Supposing that the transcription and the degradation process of
+mRNA inside the cell are both first order reactions and considering
+the dilution effect imposed on mRNA by the growthand multiplication of
+the cells, we learned that</p>
+
+\[  \frac{d[mRNA]}{dt}=\eta \cdot k_{m}\cdot [G]-k_{-m}\cdot [mRNA]-\mu \cdot [mRNA]\]
+
+<p>Explanation of symbols used above: \(k_{m}\) is for mRNA
+transcription rate constant, \(k_{-m}\) for degradation rate constant,
+\([mRNA]\) for the level of mRNA inside the cell, and for the velocity
+of cells' growth.</p>
+
+<p>Considering the transcription of mRNA in the cell is basically
+quasi-stable, so</p>
+
+\[ \frac{d[mRNA]}{dt}=0 \]
+
+<p>mRNA level can be derived by the equation above</p>
+
+\[ [mRNA]=\frac{\eta \cdot R_{m} \cdot G}{k_{-m}+\mu} \]
+
+<h4>1.4The quantity of expression products in the cell</h4>
+
+<p>Assuming that the expression of products as well as the degradation
+of mRNA is a first order reaction of the quantity of mRNA inside the
+cell, and considering the dilution effect imposed on the products by
+the growth and multiplication of the cells, we learned that</p>
+
+\[ \frac{d[P]}{dt}=k_{p}\cdot [mRNA]-k_{-p}\cdot [P]-\mu \cdot [P] \]
+
+<p>Given that the expression of the products inside the cell is
+basically stable, thus:</p>
+
+\[ \frac{d[P]}{dt}=0 \]
+
+<p>According to the equation above, we can solve for the level of cell
+products</p>
+
+\[ [P]=\frac{k_{p}\cdot [mRNA]}{k_{-p}+\mu} \]
+\[ [P]=\frac{|\sqrt{(B(A-G)+C)^2+4\cdot B\cdot C\cdot G}-[B(A-G)+C]|\cdot k_{m}\cdot k_{p}}{2\cdot B\cdot(k_{-m}+\mu )\cdot(k_{-p}+\mu )\cdot\rho } \]
+
+<h4>1.5 The concentrationof products during the fermentation process</h4>
+
+<p>According to the equation above, we can figure out the
+concentration of products in the fermentation broth, which can be
+described as</p>
+
+\[C_{p}=\frac{|\sqrt{(B(A-G)+C)^2+4\cdot B\cdot
+C\cdot G}-[B(A-G)+C]|\cdot k_{m}\cdot k_{p}\cdot x}{2\cdot
+B\cdot(k_{-m}+\mu )\cdot(k_{-p}+\mu )\cdot\rho }\]
+
+<p>Explanation of symbols used above: C is for the level of the
+products during fermentation process (\(\mu\)/L), x is for the level
+of cells in the fermentation broth (g/L), and I is for the density of
+cells (g/L)</p>
+
+<p>From the result given above we can infer that only when the
+promoter is activated, can hxlR accumulate constantly. Besides, the
+probability of its binding with BRH1 and both BRH1 and BRG2 will
+increase, and as a result, the metabolites in bacteria cells will
+increase. </p>
+
+</div>
+
+<div class="model-result">
+<a name="model-result"></a>
+<h3>Result and Analysis</h3>
+
+<p>In our actual experiments, we use RFP as downstream expression
+product (final metabolite of cells). After stimulating the growing
+bacteria with formaldehyde, we measure the fluorescence intensity of
+bacteria every once in a while, the results (the greater the
+fluorescence intensity, the greater the expression of RFP) are shown
+in Figure 1.</p>
+
+<img />Figure 2 The experiment of formaldehyde stimulation
+
+<p>As can be seen from Figure 1, after the stimulation of
+formaldehyde, the fluorescence intensity increases significantly,
+indicating that the model predictions matches the result of
+experiment, which also proves the correctness of our modeling.</p>
+
+</div>
+
+<h2>Reference</h2>
+
+<ref>[1]A first course in mathematical modeling / Frank R. Giordano
+... [et al.] China Machine Press, 2009.</ref>
+
+<ref>[2] A Guide to MATLAB : For Beginners and Experienced
+Users. Cambridge Cambridge University Press, 2012.</ref>
 
 </div>
 </section>
@@ -951,7 +1144,7 @@ thanks from HZAU-China</a></p>
 related to dCas9 device, which we had constructed the last year, so we
 also provided them with BBa_K1081000.</p>
 
-<p style="background: red">Thanks from NJAU-China</p>
+<p><a href="http://2014.igem.org/Team:NJAU_China/Collaboration">Thanks from NJAU-China</a></p>
 
 <p>After communicating with NUDT-China, we knew that both of our
 projects would use N-(3-oxododecanoyl) homoserine lactone (AHL for Las
@@ -959,9 +1152,9 @@ system), at that time we had gotten AHL, so we sent AHL to them,
 besides, we provided BBa_K1334030 to them. Similar situation happened
 to BIT, which team had also received AHL from us.</p>
 
-<p style="background: red">Address from their teams</p>
+<p><a href="http://2014.igem.org/Team:NUDT_CHINA/Attributions">Address from NUDT_CHINA</a></p>
 
-<p style="background: red">Address from their teams</p>
+<p><a href="http://2014.igem.org/Team:BIT/human_practice.html">Address from BIT</a></p>
 
 </div>
 
