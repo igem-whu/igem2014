@@ -35,6 +35,7 @@ nav {
     height: 100%;
     width: 14em;
     z-index: 1000;
+    padding: 3em 0 0;
     background: transparent;
     color: #f3f3f3;
     text-align: right;
@@ -67,6 +68,25 @@ nav li.current {
     color: #fff;
 }
 
+/* banner */
+#banner {
+    position: fixed;n
+    top: 0;
+    left: 0;
+    height: 3em;
+    width: 100%;
+    z-index: 2000;
+}
+#banner .logo {
+    float: left;
+}
+#banner .logo img {
+    height: 3em;
+}
+#banner .project-name {
+    float: left;
+}
+
 /* main */
 main {
     height: 100%;
@@ -80,7 +100,7 @@ main>section {
     background-attachment: fixed;
 }
 main>section>div {
-    padding-left: 14em;
+    padding: 3em 0 0 14em;
     margin: auto;
     width: 720px;
 }
