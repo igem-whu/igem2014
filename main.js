@@ -21,7 +21,7 @@ var switchHashDefault = function ( hash ) {
 };
 
 var switchHash = function ( hash ) {
-    y = $( "div." + hash ).offset().top;
+    y = $( "div." + hash ).offset().top - 48;
     $( "html, body" ).animate( { scrollTop: y }, 300 );
 };
 

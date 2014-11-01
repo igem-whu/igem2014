@@ -37,7 +37,6 @@ nav {
     z-index: 1000;
     padding: 3em 0 0;
     background: transparent;
-    color: #f3f3f3;
     text-align: right;
     font-family: sans-serif;
     font-weight: 600;
@@ -63,9 +62,11 @@ nav>ul>ul>li a {
 
 nav li:hover {
     color: #fff;
+    background: #000;
 }
 nav li.current {
     color: #fff;
+    background: #000;
 }
 
 /* banner */
@@ -75,8 +76,8 @@ nav li.current {
     left: 0;
     height: 3em;
     width: 100%;
+    background-color: #fbfbf9;
     z-index: 2000;
-    background-color: #4ca454;
 }
 #banner .logo {
     float: left;
@@ -90,7 +91,7 @@ nav li.current {
     float: left;
     height: 2em;
     padding: 0.2em 2em;
-    color: #fff;
+    color: #4ca454;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 2em;
     line-height: 100%
@@ -114,33 +115,33 @@ main>section>div {
     margin: auto;
 }
 #home {
-    background-image: url(main-images/b1.png);
+/*     background-image: url(main-images/b1.png); */
     height: 100%;
 }
-#project {
-    background-image: url(main-images/b2.png);
-}
-#results {
-    background-image: url(main-images/b3.png);
-}
-#modeling {
-    background-image: url(main-images/b4.png);
-}
-#achieve {
-    background-image: url(main-images/b5.png);
-}
-#practice {
-    background-image: url(main-images/b6.png);
-}
-#team {
-    background-image: url(main-images/b3.png);
-}
-#safety {
-    background-image: url(main-images/b4.png);
-}
-#notebook {
-    background-image: url(main-images/b5.png);
-}
+/* #project { */
+/*     background-image: url(main-images/b2.png); */
+/* } */
+/* #results { */
+/*     background-image: url(main-images/b3.png); */
+/* } */
+/* #modeling { */
+/*     background-image: url(main-images/b4.png); */
+/* } */
+/* #achieve { */
+/*     background-image: url(main-images/b5.png); */
+/* } */
+/* #practice { */
+/*     background-image: url(main-images/b6.png); */
+/* } */
+/* #team { */
+/*     background-image: url(main-images/b3.png); */
+/* } */
+/* #safety { */
+/*     background-image: url(main-images/b4.png); */
+/* } */
+/* #notebook { */
+/*     background-image: url(main-images/b5.png); */
+/* } */
 
 ref { font-size: 0.6em; }
 
