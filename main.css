@@ -33,9 +33,9 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 14em;
+    width: 12em;
     z-index: 1000;
-    padding: 3em 0 0;
+    padding: 3em 0 0 2em;
     background: transparent;
     text-align: right;
     font-family: sans-serif;
